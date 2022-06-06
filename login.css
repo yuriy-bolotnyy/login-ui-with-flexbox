@@ -1,0 +1,116 @@
+:root {
+    --card-element-width: 14rem;
+    --card-element-height: 1.5rem;
+    --placeholder-color: rgb(219, 216, 213);
+}
+
+html,body{
+    margin: 0px;
+}
+
+body {
+    min-height: 100%;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251, 251, 251);
+}
+
+.border {
+    /* border-style: dashed; */
+    border-width: 1px;
+}
+
+.shadow {
+    box-shadow:1px 3px 10px 0px rgba(0,0,0,0.05);
+}
+
+.radius {
+    border-radius: 30px;
+}
+
+.card   {
+    /* border-style: hidden;
+    border-width: 4px; */
+    border-color: rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,1);
+    min-width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    /* padding:  0px 1rem 0px; */
+}
+
+.title-div {
+    color: rgb(38,38,38,38);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+}
+
+.username-div {
+    /* padding: 1rem; */
+}
+
+.font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    /* color: rgb(213, 210, 207); */
+}
+
+#username {
+    width: var(--card-element-width);
+    height: var(--card-element-height);
+    /* border-style: hidden; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* margin-top: 1rem; */
+    margin: 1rem;
+    border-top: 0ch;
+    border-left: 0ch;
+    border-right: 0ch;
+    border-width: 1px;
+    /* color: rgb(28, 2, 76); */
+}
+
+#username::placeholder {
+    color: var(--placeholder-color);
+}
+
+#password::placeholder {
+    color: var(--placeholder-color);
+}
+
+#password {
+    width: var(--card-element-width);
+    height: var(--card-element-height);
+    margin: 1rem;
+    border-top: 0ch;
+    border-left: 0ch;
+    border-right: 0ch;
+    border-width: 1px;
+    /* border-style: hidden; */
+}
+
+.password-div {
+    padding: 1rem;
+}
+
+.sign-in-button-div {
+    padding: 1.5rem;
+}
+
+.sign-in-button-div button {
+    background-color: rgb(20, 144, 222);
+    color: rgb(216,236,248);
+    padding: 0.8rem;
+    width: var(--card-element-width);
+    border-style: none;
+}
